@@ -564,6 +564,9 @@ int main() {
                 cout << "In September there is:\n";
                 cout << "- Independence Day, 1 September\n";
                 break;
+
+
+
             case 10:
                 cout << "In October there is:\n";
                 cout << "- Teachers' Day, 1 October\n";
