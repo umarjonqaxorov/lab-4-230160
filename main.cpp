@@ -120,6 +120,8 @@ int main() {
         cout << "The triangle is not valid." << endl;
     }
     cout << "PROBLEM 8\n";
+
+
     char mychar ;
     cin >> mychar ;
     if ( mychar >= 'A' && mychar <= 'Z') {
