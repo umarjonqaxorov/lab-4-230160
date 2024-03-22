@@ -121,7 +121,6 @@ int main() {
     }
     cout << "PROBLEM 8\n";
 
-
     char mychar ;
     cin >> mychar ;
     if ( mychar >= 'A' && mychar <= 'Z') {
