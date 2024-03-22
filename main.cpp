@@ -558,6 +558,7 @@ int main() {
                 cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
                 break;
             case 9:
+
                 cout << "In September there is:\n";
                 cout << "- Independence Day, 1 September\n";
                 break;
