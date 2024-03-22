@@ -1,113 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //
 // Created by ... //
 #include <iostream>
@@ -410,7 +301,6 @@ int main() {
 
     std::cout << "Choose a language to be greeted (u - Uzbek, e - English, r - Russian, g - German): ";
     std::cin >> choice;
-
     switch(choice) {
         case 'u':
             std::cout << "Salom" << std::endl; // Uzbek: Hello
@@ -428,7 +318,8 @@ int main() {
             std::cout << "I do not know this language :(" << std::endl;
             break;
     }
-    cout << "PROBLEM 18\n";git
+    cout << "PROBLEM 18\n";
+// If / else
     double weight;
     double cost;
     cout << "Enter the weight of the package ";
@@ -520,8 +411,8 @@ int main() {
         default:
             cout << "It is not a digit";
     }
-    cout << "PROBLEM 20" ;
-      void printHolidays(int month) {
+            cout << "PROBLEM 20" ;
+    void printHolidays(int month) {
         switch (month) {
             case 1:
                 cout << "In January there is:\n";
@@ -557,15 +448,9 @@ int main() {
                 cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
                 break;
             case 9:
-
-
-
                 cout << "In September there is:\n";
                 cout << "- Independence Day, 1 September\n";
                 break;
-
-
-
             case 10:
                 cout << "In October there is:\n";
                 cout << "- Teachers' Day, 1 October\n";
@@ -584,4 +469,4 @@ int main() {
 
 
 
-    }    }
+    }
