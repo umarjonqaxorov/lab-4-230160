@@ -1,12 +1,120 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
-// Created by ...
-//
+// Created by ... //
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
-#include
-<string>
+#include <string>
 using namespace std;
 int main() {
     cout << "PROBLEM 1\n";
@@ -24,9 +132,9 @@ int main() {
     if (x1>=0 ) {
         if (x1 % 2==0 ){
             {
+                cout << " Positive and even" ;
             }
         }
-        cout << " Positive and even" ;
         else {
             cout << " Positive and even" ;
         }
@@ -51,8 +159,8 @@ int main() {
         else {
             if ( b>c)
             {
+                cout << " b is the largest" ;
             }
-            cout << " b is the largest" ;
             else {
                 cout << " c is the largest" ;
             }
@@ -73,9 +181,9 @@ int main() {
     }
     cout << "PROBLEM 4\n";
     int num1, num2 ;
-    cin >> num1;
+    cin >> num1 ;
     cin >> num2 ;
-    if ( num1 % num2==0){
+    if ( num1 % num2 == 0) {
         cout << " num1 is divisible num2 " ;
     }
     else {
@@ -84,7 +192,7 @@ int main() {
     cout << "PROBLEM 5\n";
     int year ;
     cin >> year ;
-    if ( year % 4 ==0 and year %100 != 0or year % 400== 0) {
+    if ( year % 4 ==0 and year % 100 != 0 or year % 400 == 0) {
         cout << " is the leap year" ;
     }
     else {
@@ -95,17 +203,17 @@ int main() {
     cin >> a1 ;
     cin >> b1 ;
     cin >> c1 ;
-    float descrimin = sqrt( b1*b1- 4* a1* c1) / 2*a ;
+    float descrimin = sqrt( b1*b1 - 4* a1* c1) / 2*a ;
     if ( descrimin > 0) {
         float x1 = (-b1+ descrimin) / 2*a1 ;
-        float x2 = (-b1-descrimin) / 2*a1 ;
+        float x2 = ( -b1-descrimin) / 2*a1 ;
         cout << " x1 is equal to" << x1 << endl ;
         cout << " x2 is equal to" << x2 << endl ;
     }
     else {
         if ( descrimin == 0) {
             float x1 = (-b1/2*a) ;
-            float x2 = (-b1/2*a) ;
+            float x2 = ( -b1/2*a) ;
             cout << " x1 is equal to" << x1 << endl ;
             cout << " x2 is equal to" << x2 << endl ;
         }
@@ -115,12 +223,11 @@ int main() {
     cout << "Enter the three angles of the triangle: ";
     cin >> angle1 >> angle2 >> angle3;
     if (angle1 + angle2 + angle3 == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
-        cout << "The triangle is valid." <<endl;
+        cout << "The triangle is valid." << endl;
     } else {
         cout << "The triangle is not valid." << endl;
     }
     cout << "PROBLEM 8\n";
-
     char mychar ;
     cin >> mychar ;
     if ( mychar >= 'A' && mychar <= 'Z') {
@@ -182,281 +289,294 @@ int main() {
     cin >> pal1 ;
     float numb1 = pal1 / 100 ;
     float numb3 = pal1 %2 ;
-      if (numb1 == numb3) {
+    if (numb1 == numb3) {
         cout << " is a palindrome" << endl ;
     }
     else {
         cout << " is not a palindrome" << endl ;
     }
     cout << "PROBLEM 13\n";
-    char b;
-    cin >> b ;
-    If ( b == 'g') {
-        cout << " Go!" ;
-    }
-    if ( b == 'y') {
-        cout <<"Get ready!" ;}
+    char input;
 
-        if ( b == ' r' ) {
-            cout << " Stop ! " ;
-        }
-        cout << "PROBLEM 14\n";
-        int today ;
-        int days_after ;
-        cin >> today >> days_after ;
-        int future_day =(today + days_after) % 7 ;
-        cout << " Today is " ;
-        switch (today) {
-            case 0:
-                cout << "Sunday" ;
-                break;
-            case 1:
-                cout << "Monday" ;
-                break;
-            case 2:
-                cout << "Tuesday" ;
-                break;
-            case 3:
-                cout << "Wednesday" ;
-                break;
-            case 4:
-                cout << "Thursday" ;
-                break;
-            case 5:
-                cout << "Friday" ;
-                break;
-            case 6:
-                cout << "Saturday" ;
-                break;
-        }
-        cout << " and the future day is " ;
-        switch (future_day) {
-            case 0:
-                cout << "Sunday" ;
-                break;
-            case 1:
-                cout << "Monday" ;
-                break;
-            case 2:
-                cout << "Tuesday" ;
-                break;
-            case 3:
-                cout << "Wednesday" ;
-                break;
-            case 4:
-                cout << "Thursday" ;
-                break;
-            case 5:
-                cout << "Friday" ;
-                break;
-            case 6:
-                cout << "Saturday" ;
-                break;
-        }
-        cout << "PROBLEM 15\n";
-        int grade;
-        char scale;
-        cout << "Enter the student's grade ";
-        cin >> grade;
-        switch (grade / 10) {
-            case 10:
-            case 9:
-                scale = 'A';
-                break;
-            case 8:
-                scale = 'B';
-                break;
-            case 7:
-                scale = 'C';
-                break;
-            case 6:
-                scale = 'D';
-                break;
-            default:
-                scale = 'F';
-        }
-        cout << "Grade scale: " << scale << endl;
-        cout << "PROBLEM 16\n";
-        int number;
-        cout << "Enter a number: ";
-        cin >> number;
-        switch (number > 0 ? 1 : (number < 0 ?-1 : 0)) {
-            case 1:
-                cout << "Positive" << endl;
-                break;
-            case-1:
-                cout << "Negative" <<endl;
-                break;
-            default:
-                cout << "It is zero" <<endl;
-        }
-        cout << "PROBLEM 17\n";
-        char b;
-        cin >> b;
-        if ( b == 'u' ) {
-            cout << " Assalomu alaykum" ;
-        }
-        if ( b == ' r') {
-            cout << " Привет" ;
-        }
-        if ( b == 'g' ) {
-            cout << " Hello " ;
-        } else {
-            cout << " I dunno this language":) ;
-        }
-        cout << "PROBLEM 18\n";
-        // If / else
-        double weight;
-        double cost;
-        cout << "Enter the weight of the package ";
-        cin >> weight;
-        if (weight <= 0) {
-            cout << "Invalid input." << endl;
-        } else if (weight > 20) {
-            cout << "The package cannot be shipped." << endl;
-        } else if (weight <= 1) {
-            cost = 3500;
-        } else if (weight <= 3) {
-            cost = 5500;
-        } else if (weight <= 10) {
-            cost = 8500;
-        } else { // weight <= 20
-            cost = 10500;
-        }
-        if (weight > 0 && weight <= 20) {
-            cout << "Shipping cost: " << cost << " som" << endl;
-        }
-        // switch/ case
-        double weight_2;
-        double cost_2;
-        cout << "Enter the weight of the package ";
-        cin >> weight_2;
-        if (weight_2 <= 0) {
-            cout << "Invalid input." <<endl;
-            return 0;
-        } else if (weight_2 > 20) {
-            cout << "The package cannot be shipped." <<endl;
-            return 0;
-        }
-        switch (static_cast<int>(weight_2)) {
-            case 1:
-                cost_2 = 3500;
-                break;
-            case 2:
-            case 3:
-                cost_2 = 5500;
-                break;
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 10:
-                cost_2 = 8500;
-                break;
-            default:
-                cost_2 = 10500;
-        }
+    std::cout << "Enter the color of the traffic light (g, y, r): ";
+    std::cin >> input;
+
+    switch(input) {
+        case 'g':
+            std::cout << "Go!" << std::endl;
+            break;
+        case 'y':
+            std::cout << "Get ready!" << std::endl;
+            break;
+        case 'r':
+            std::cout << "Stop" << std::endl;
+            break;
+        default:
+            std::cout << "Invalid input!" << std::endl;
+            break;
+    }
+    cout << "PROBLEM 14\n";
+    int today ;
+    int days_after ;
+    cin >> today >> days_after ;
+    int future_day =(today + days_after) % 7 ;
+    cout << " Today is " ;
+    switch (today) {
+        case 0:
+            cout << "Sunday" ;
+            break;
+        case 1:
+            cout << "Monday" ;
+            break;
+        case 2:
+            cout << "Tuesday" ;
+            break;
+        case 3:
+            cout << "Wednesday" ;
+            break;
+        case 4:
+            cout << "Thursday" ;
+            break;
+        case 5:
+            cout << "Friday" ;
+            break;
+        case 6:
+            cout << "Saturday" ;
+            break;
+    }
+    cout << " and the future day is " ;
+    switch (future_day) {
+        case 0:
+            cout << "Sunday" ;
+            break;
+        case 1:
+            cout << "Monday" ;
+            break;
+        case 2:
+            cout << "Tuesday" ;
+            break;
+        case 3:
+            cout << "Wednesday" ;
+            break;
+        case 4:
+            cout << "Thursday" ;
+            break;
+        case 5:
+            cout << "Friday" ;
+            break;
+        case 6:
+            cout << "Saturday" ;
+            break;
+    }
+    cout << "PROBLEM 15\n";
+    int grade;
+    char scale;
+    cout << "Enter the student's grade ";
+    cin >> grade;
+    switch (grade / 10) {
+        case 10:
+        case 9:
+            scale = 'A';
+            break;
+        case 8:
+            scale = 'B';
+            break;
+        case 7:
+            scale = 'C';
+            break;
+        case 6:
+            scale = 'D';
+            break;
+        default:
+            scale = 'F';
+    }
+    cout << "Grade scale: " << scale << endl;
+    cout << "PROBLEM 16\n";
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+    switch (number > 0 ? 1 : (number < 0 ? -1 : 0)) {
+        case 1:
+            cout << "Positive" << endl;
+            break;
+        case -1:
+            cout << "Negative" <<endl;
+            break;
+        default:
+            cout << "It is zero" <<endl;
+    }
+    cout << "PROBLEM 17\n";
+    char choice;
+
+    std::cout << "Choose a language to be greeted (u - Uzbek, e - English, r - Russian, g - German): ";
+    std::cin >> choice;
+
+    switch(choice) {
+        case 'u':
+            std::cout << "Salom" << std::endl; // Uzbek: Hello
+            break;
+        case 'e':
+            std::cout << "Hello" << std::endl; // English
+            break;
+        case 'r':
+            std::cout << "Привет" << std::endl; // Russian: Hello
+            break;
+        case 'g':
+            std::cout << "Hallo" << std::endl; // German: Hello
+            break;
+        default:
+            std::cout << "I do not know this language :(" << std::endl;
+            break;
+    }
+    cout << "PROBLEM 18\n";
+// If / else
+    double weight;
+    double cost;
+    cout << "Enter the weight of the package ";
+    cin >> weight;
+    if (weight <= 0) {
+        cout << "Invalid input." << endl;
+    } else if (weight > 20) {
+        cout << "The package cannot be shipped." << endl;
+    } else if (weight <= 1) {
+        cost = 3500;
+    } else if (weight <= 3) {
+        cost = 5500;
+    } else if (weight <= 10) {
+        cost = 8500;
+    } else { // weight <= 20
+        cost = 10500;
+    }
+    if (weight > 0 && weight <= 20) {
         cout << "Shipping cost: " << cost << " som" << endl;
-        cout << "PROBLEM 19\n";
-        int digit;
-        cout << "Enter the digit: ";
-        cin >> digit;
-        switch (digit) {
-            case 0:
-                cout << "Zero";
-                break;
+    }
+// switch/ case
+    double weight_2;
+    double cost_2;
+    cout << "Enter the weight of the package ";
+    cin >> weight_2;
+    if (weight_2 <= 0) {
+        cout << "Invalid input." <<endl;
+        return 0;
+    } else if (weight_2 > 20) {
+        cout << "The package cannot be shipped." <<endl;
+        return 0;
+    }
+    switch (static_cast<int>(weight_2)) {
+        case 1:
+            cost_2 = 3500;
+            break;
+        case 2:
+        case 3:
+            cost_2 = 5500;
+            break;
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+            cost_2 = 8500;
+            break;
+        default:
+            cost_2 = 10500;
+    }
+    cout << "Shipping cost: " << cost << " som" << endl;
+    cout << "PROBLEM 19\n";
+    int digit;
+    cout << "Enter the digit: ";
+    cin >> digit;
+    switch (digit) {
+        case 0:
+            cout << "Zero";
+            break;
+        case 1:
+            cout << "One";
+            break;
+        case 2:
+            cout << "Two";
+            break;
+        case 3:
+            cout << "Three";
+            break;
+        case 4:
+            cout << "Four";
+            break;
+        case 5:
+            cout << "Five";
+            break;
+        case 6:
+            cout << "Six";
+            break;
+        case 7:
+            cout << "Seven";
+            break;
+        case 8:
+            cout << "Eight";
+            break;
+        case 9:
+            cout << "Nine";
+            break;
+        default:
+            cout << "It is not a digit";
+    }
+    cout << "PROBLEM 20" ;
+      void printHolidays(int month) {
+        switch (month) {
             case 1:
-                cout << "One";
+                cout << "In January there is:\n";
+                cout << "- New Year's Day, 1 January\n";
                 break;
             case 2:
-                cout << "Two";
+                cout << "In February, April, June, July, August, November there are no holidays.\n";
+                cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
                 break;
             case 3:
-                cout << "Three";
+                cout << "In March there is:\n";
+                cout << "- International Women's Day, 8 March\n";
+                cout << "- Navruz, 21 March\n";
                 break;
             case 4:
-                cout << "Four";
+                cout << "In April, June, July, August, November there are no holidays.\n";
+                cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
                 break;
             case 5:
-                cout << "Five";
+                cout << "In May there is:\n";
+                cout << "- Remembrance Day, 9 May\n";
                 break;
             case 6:
-                cout << "Six";
+                cout << "In June, July, August, November there are no holidays.\n";
+                cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
                 break;
             case 7:
-                cout << "Seven";
+                cout << "In July, August, November there are no holidays.\n";
+                cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
                 break;
             case 8:
-                cout << "Eight";
+                cout << "In August, November there are no holidays.\n";
+                cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
                 break;
             case 9:
-                cout << "Nine";
+                cout << "In September there is:\n";
+                cout << "- Independence Day, 1 September\n";
+                break;
+            case 10:
+                cout << "In October there is:\n";
+                cout << "- Teachers' Day, 1 October\n";
+                break;
+            case 11:
+                cout << "In November there are no holidays.\n";
+                cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
+                break;
+            case 12:
+                cout << "In December there is:\n";
+                cout << "- Constitution Day, 8 December\n";
                 break;
             default:
-                cout << "It is not a digit";
+                cout << "Invalid month number.\n";
         }
-        cout << "PROBLEM20\n ;
-        void printHolidays(int month) {
-            switch (month) {
-                case 1:
-                    cout << "In January there is:\n";
-                    cout << "- New Year's Day, 1 January\n";
-                    break;
-                case 2:
-                    cout << "In February, April, June, July, August, November there are no holidays.\n";
-                    cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
-                    break;
-                case 3:
-                    cout << "In March there is:\n";
-                    cout << "- International Women's Day, 8 March\n";
-                    cout << "- Navruz, 21 March\n";
-                    break;
-                case 4:
-                    cout << "In April, June, July, August, November there are no holidays.\n";
-                    cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
-                    break;
-                case 5:
-                    cout << "In May there is:\n";
-                    cout << "- Remembrance Day, 9 May\n";
-                    break;
-                case 6:
-                    cout << "In June, July, August, November there are no holidays.\n";
-                    cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
-                    break;
-                case 7:
-                    cout << "In July, August, November there are no holidays.\n";
-                    cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
-                    break;
-                case 8:
-                    cout << "In August, November there are no holidays.\n";
-                    cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
-                    break;
-                case 9:
-                    cout << "In September there is:\n";
-                    cout << "- Independence Day, 1 September\n";
-                    break;
-                case 10:
-                    cout << "In October there is:\n";
-                    cout << "- Teachers' Day, 1 October\n";
-                    break;
-                case 11:
-                    cout << "In November there are no holidays.\n";
-                    cout << "There are Ramadan Hayit and Kurban Hayit but their dates change.\n";
-                    break;
-                case 12:
-                    cout << "In December there is:\n";
-                    cout << "- Constitution Day, 8 December\n";
-                    break;
-                default:
-                    cout << "Invalid month number.\n";
-            }
-        }
-        int main() {
-            int month;
-            cout << "Enter the month number: ";
-            cin >> month;
-            printHolidays(month);
-            return 0;
-        }
+
+
+
+    }    }
