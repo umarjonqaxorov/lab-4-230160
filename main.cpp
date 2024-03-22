@@ -428,8 +428,7 @@ int main() {
             std::cout << "I do not know this language :(" << std::endl;
             break;
     }
-    cout << "PROBLEM 18\n";
-// If / else
+    cout << "PROBLEM 18\n";git
     double weight;
     double cost;
     cout << "Enter the weight of the package ";
