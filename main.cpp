@@ -559,6 +559,8 @@ int main() {
                 break;
             case 9:
 
+
+
                 cout << "In September there is:\n";
                 cout << "- Independence Day, 1 September\n";
                 break;
